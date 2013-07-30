@@ -10,7 +10,7 @@ var mkTodo = function(sel) {
 		.classed("done", function(d) { return d.done || false });
 }
 
-d3.json("./todos.json", function(todos) {
+d3.json("http://papill0n.org/todo.json", function(todos) {
 	items.data(todos)
 		.enter().append("li")
 		.call(mkTodo);
