@@ -1,5 +1,3 @@
-var todos = [{description: "oops"}, {description: "be ridiculous", done: true}, {description: "??"}];
-
 var items = d3.select("#todos").append("ul").selectAll("li");
 
 var mkTodo = function(sel) {
@@ -12,6 +10,8 @@ var mkTodo = function(sel) {
 		.classed("done", function(d) { return d.done || false });
 }
 
-items.data(todos)
-	.enter().append("li")
-	.call(mkTodo);
+d3.json("./todos.json", function(todos) {
+	items.data(todos)
+		.enter().append("li")
+		.call(mkTodo);
+});
