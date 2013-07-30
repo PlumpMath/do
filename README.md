@@ -15,9 +15,9 @@ see, so they can ask me about it, help me and whatnot.
     # Open http://localhost:8000 in your browser
 
 You should now see the todo items for `do` itself. Alternatively, you
-can configure/start your browser to allow `XHR`s to `file:///` URLs
-(`--allow-file-access-from-files` for chromium, by default in firefox)
-and load [index.html](./index.html) directly.
+can just load [index.html](./index.html) from disk if your browser
+allows `XMLHttpRequest`s for `file:///` URLs (firefox does by default,
+chromium needs the `--file-access-from-files` flag).
 
 ## The future
 
