@@ -16,7 +16,8 @@ see, so they can ask me about it, help me and whatnot.
 
 You should now see the todo items for `do` itself. Alternatively, you
 can configure/start your browser to allow `XHR`s to `file:///` URLs
-(`--allow-file-access-from-files` for chromium, by default in firefox).
+(`--allow-file-access-from-files` for chromium, by default in firefox)
+and load [index.html](./index.html) directly.
 
 ## The future
 
